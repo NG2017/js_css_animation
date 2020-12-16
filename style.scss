@@ -35,10 +35,10 @@ body {
 
     &.clicked {
         h1 {
-            animation: right 4s infinite reverse;
-        }
+             animation: right 4s infinite linear reverse;
+      }
         p {
-            animation: right 4s infinite;
+            animation: right 4s infinite linear;
         }
         @keyframes right {
             0% {

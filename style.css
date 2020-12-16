@@ -38,12 +38,12 @@ body {
 }
 
 #root.clicked h1 {
-  animation: right 4s infinite reverse;
+  animation: right 4s infinite linear reverse;
 }
 
 #root.clicked p {
-  -webkit-animation: right 4s infinite;
-          animation: right 4s infinite;
+  -webkit-animation: right 4s infinite linear;
+          animation: right 4s infinite linear;
 }
 
 @-webkit-keyframes right {
