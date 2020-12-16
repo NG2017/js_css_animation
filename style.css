@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #a3dbea;
+  color: #254a94;
+}
+
+#root {
+  height: 100vh;
+}
+
+#root h1,
+#root p {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root h1 {
+  font-weight: 900;
+}
+
+#root p {
+  font-weight: 300;
+}
+
+#root.clicked h1 {
+  animation: right 4s infinite reverse;
+}
+
+#root.clicked p {
+  -webkit-animation: right 4s infinite;
+          animation: right 4s infinite;
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: rotate(0) translate(-50%, -50%);
+            transform: rotate(0) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+            transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes right {
+  0% {
+    -webkit-transform: rotate(0) translate(-50%, -50%);
+            transform: rotate(0) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+            transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
